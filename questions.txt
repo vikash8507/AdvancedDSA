@@ -1,0 +1,7 @@
+Array and String: 50
+Subarray, Substring, Two Pointer: 35
+Searching: 30
+Sorting: 30
+Hashing: 50
+Linked List: 50
+Stack and Queue: 50
