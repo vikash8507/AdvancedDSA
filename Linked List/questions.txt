@@ -8,4 +8,8 @@
 4. Give a Linked Linked. Find data at kth element. (0 index based) - Done
     TC (min(N, k)) and SC (1)
 5. Given a Linked List. Given k and x. Have to insert x at kth position. (0 based index)
+    TC (min(N, k)) and SC (1)
 6. Give a Linked List. Delete a node at kth index. (0 based index)
+    TC (min(N, k)) and SC (1)
+7. Give a Linked List. Reverse that Linked List
+    TC (min(N, k)) and SC (1)
