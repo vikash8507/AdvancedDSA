@@ -11,5 +11,15 @@
     TC (min(N, k)) and SC (1)
 6. Give a Linked List. Delete a node at kth index. (0 based index)
     TC (min(N, k)) and SC (1)
-7. Give a Linked List. Reverse that Linked List
-    TC (min(N, k)) and SC (1)
+7. Given a Linked List. Reverse this Linked List
+    TC (N) and SC (1)
+8. Find middle element of given Linked List
+    TC (N) and SC (1)
+    - Find Length of Linked Lis
+    - Find the (N-1)/2th element of Linked List
+    - Use signle Loop with Slow and Fast Pointers
+    - fast.next is not None and fast.next.next is not None
+      - if fast.next is None then odd
+      - if fast.next is not None then even
+9. Two soted linked list. Merge in single sorted linked list without new linked list
+10. 
