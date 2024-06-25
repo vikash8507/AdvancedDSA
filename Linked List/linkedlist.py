@@ -19,6 +19,20 @@ class LinkedList:
             self.tail = new_node
         return self.head
 
+    def sorted_linked_list_generation(self, size):
+        if size < 1:
+            return
+        items = [randint(1, 100) for _ in range(size)]
+        items.sort()
+
+        self.head = self.tail = Node(items[0])
+        for item in items[1:]:
+            new_node = Node(item)
+            self.tail.next = new_node
+            self.tail = new_node
+        return self.head
+
+
     @staticmethod
     def print_node_values_of_linked_list(head: Node) -> Node:
         if head:
