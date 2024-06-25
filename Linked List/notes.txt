@@ -22,4 +22,4 @@
 11. Access a nth node then you have to traverse till (n-1)th
 12. If ask in question that give a Linked List then in majority case its given Head
 13. When you start solving question then try to do not touch Head directly. Store head in any temp head and operate on that for move.
-14. 
+14. For Linked List preffered way of sorting - Merge Sort 

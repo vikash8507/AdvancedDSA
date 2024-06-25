@@ -22,6 +22,7 @@ def merge_two_sorted_linked(head1: Node, head2: Node):
         temp.next = head1
     if head2:
         temp.next = head2
+    head = head.next
     return head.next
 
 
@@ -37,4 +38,4 @@ def main():
     LinkedList.print_node_values_of_linked_list(head)
     print()
 
-main()
+# main()

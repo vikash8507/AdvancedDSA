@@ -22,4 +22,18 @@
       - if fast.next is None then odd
       - if fast.next is not None then even
 9. Two soted linked list. Merge in single sorted linked list without new linked list
-10. 
+10. Sort Linked List (Merge Sort)
+    TC (NlogN) and SC (logN)
+11. Given a Linked List. Detect a cycle.
+    Solution1 - Use dictionary with store address
+    TC (N) SC (N)
+    Solution2 - Slow and Fast Pointers - Example v and 2v velocity with distance diff d
+    TC (N) SC (1)
+12. Given a Linked List with a cycle. Find the Loop Node
+    Solution1 - Use dictionary with store address
+    TC (N) SC (N)
+    Solution2 - Slow and Fast Pointers 
+        - Find first match for slow and fast
+        - take two more point one at head and second at meet point
+        - go one by one and then meet point will be loop point
+    TC (N) SC (1)
