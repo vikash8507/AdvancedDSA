@@ -7,8 +7,10 @@ class LinkedList:
         self.tail = None
 
     def create_node_of_size_n(self, size):
-        if not isinstance(size, int) or size < 1:
+        if not isinstance(size, int) or size < 0:
             raise ValueError
+        if size == 0:
+            return
         self.head = Node(randint(1, 100))
         self.tail = self.head
         for _ in range(1, size):

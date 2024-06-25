@@ -18,13 +18,34 @@ def reverse_linked_list(head: Node):
     head = prev
     return head
 
+# Find middlemost element of Linked List
+# Input: 1 -> 2 -> 3 -> 4 -> 5
+# Output: 3
+# Input: 1 -> 2 -> 3 -> 4 -> 5 -> 6
+# Output: 3 / 4
+
+
+def find_middlemost_element_linked_list(head: Node):
+    if head is None:
+        return None, None
+    if head.next is None:
+        return head.data, None
+    slow = fast = head
+    while fast.next and fast.next.next:
+        slow = slow.next
+        fast = fast.next.next
+    if fast.next is None:
+        return slow.data, None
+    return slow.data, slow.next.data
+
 
 def main():
     ll = LinkedList()
-    head = ll.create_node_of_size_n(5)
+    head = ll.create_node_of_size_n(0)
     LinkedList.print_node_values_of_linked_list(head)
-    head = reverse_linked_list(head)
     print()
-    LinkedList.print_node_values_of_linked_list(head)
+    # head = reverse_linked_list(head)
+    # LinkedList.print_node_values_of_linked_list(head)
+    print(find_middlemost_element_linked_list(head), "=============================")
 
 main()
