@@ -19,6 +19,12 @@ class LinkedList:
             self.tail = new_node
         return self.head
 
+    def create_cyclic_linked_list(self, size):
+        self.head = self.create_node_of_size_n(size)
+        self.tail.next = self.head
+        return self.head
+
+
     def sorted_linked_list_generation(self, size):
         if size < 1:
             return
