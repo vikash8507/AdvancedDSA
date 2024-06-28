@@ -24,6 +24,17 @@ class LinkedList:
         self.tail.next = self.head
         return self.head
 
+    def create_linked_list_with_list(self, lst: list) -> Node:
+        if not lst:
+            return self.head
+        self.head = Node(lst[0])
+        self.tail = self.head
+        for item in lst[1:]:
+            new_node = Node(item)
+            self.tail.next = new_node
+            self.tail = new_node
+        return self.head
+
 
     def sorted_linked_list_generation(self, size):
         if size < 1:
