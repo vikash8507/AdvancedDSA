@@ -37,3 +37,8 @@
         - take two more point one at head and second at meet point
         - go one by one and then meet point will be loop point
     TC (N) SC (1)
+13. Given a Doubly Linked List. Check it is palindrom or not
+    TC (N) SC(1)
+14. Given a DLL and Give a Node. Insert a new Node before it.
+15. Given a DLL and Give a Node. Delete that.
+16. LRU Cache using DLL and HasMap - In Progress
