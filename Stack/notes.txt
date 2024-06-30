@@ -17,4 +17,6 @@
 4. Implementation
    - Using Array (Static Array) or ArrayList (Dynamic Array)
    - Using Linkked List (DLL or SLL insertion and deletion at head)
-5. 
+5. Best Data Structure to reverse data is Stack
+6. Space Complexity is very interesting on Stack
+7. 

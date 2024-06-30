@@ -12,8 +12,8 @@ class StackWithList:
     def pop(self) -> None:
         if self.top == -1:
             return
-        self.stack.pop()
         self.top -= 1
+        return self.stack.pop()
     
     def peak(self) -> Any:
         return None if self.top == -1 else self.stack[self.top]

@@ -1,2 +1,10 @@
-1. Given a string. Remove every consucative dublicate pair of chars until there are no consucative duplicate pair.
-2. 
+1. Implementation of stack using Array/List
+2. Implementation of stack using Linkked List
+3. Given a string. Remove every consucative dublicate pair of chars until there are no consucative duplicate pair.
+   - TC (N) and SC (N)
+4. Given two sorted stacks. Merge them into a single sorted stack.
+   - TC (N+M) and SC (1) or SC(N+M) ******************* Most Interesting for Space Complexity in case of memory free at time of pop ***********************
+5. Given a stack. Sort it.
+   - Use Merge Sort
+   - TC (NlogN) and SC (logN) - SC due to recursion call if pop release the memory else SC (NlogN)
+6. 
