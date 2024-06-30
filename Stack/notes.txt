@@ -1,0 +1,20 @@
+1. Stack: 
+   - Property:- Last in First out (LIFO) or First in Last out (FILO)
+2. Operations:
+   - push(x):- Push x at the top of the stack
+   - pop():- Remove and return top most of stack
+   - top() / peak():- Returns the top most stack
+   - size():- Size of stack - Nomber of elements
+   - isEmpty():-
+   - Exceptions:- StackOverFlow and StackUnderFlow
+3. Realtime applications:
+   - Undo/Redo
+   - Browswer forward and backword
+   - Recursion Call Stack
+   - Terminal Up and Down (Can say)
+   - Expression evaluation
+   - Compile syntax/brackets check
+4. Implementation
+   - Using Array (Static Array) or ArrayList (Dynamic Array)
+   - Using Linkked List (DLL or SLL insertion and deletion at head)
+5. 

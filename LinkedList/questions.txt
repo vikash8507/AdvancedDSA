@@ -41,4 +41,12 @@
     TC (N) SC(1)
 14. Given a DLL and Give a Node. Insert a new Node before it.
 15. Given a DLL and Give a Node. Delete that.
-16. LRU Cache using DLL and HasMap - In Progress
+16. LRU Cache using DLL and HasMap - Important
+17. Given a Linked List. Every Node has 2 pointers. 1 next and 1 random. Clone the Linked List - Important
+18. Given a Linked List. Check it is palindrom or not.
+19. Given a Linked Lis. Reorder it.
+20. Given a 2D Linked List. Flatten it to a Sorted Singly Linked Lis (SSL).
+    - every sublist also sorted
+21. Given a Y-shaped Linked List. Find intersection Node.
+    - Solve find circular linked list point of circle.
+22. Given a Linked List. Find the length of longest odd len palindrom sub Linked List.
