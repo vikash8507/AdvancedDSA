@@ -1,0 +1,178 @@
+1. Merge Two Sorted Lists
+   - Merge two sorted linked lists, A and B, and return it as a new list.
+   - The new list should be made by splicing together the nodes of the first two lists and should also be sorted.
+    A = 5 -> 8 -> 20
+    B = 4 -> 11 -> 15
+    => 4 -> 5 -> 8 -> 11 -> 15 -> 20
+    A = 1 -> 2 -> 3
+    B = Null
+    =>  1 -> 2 -> 3
+2. Sort a linked list, A in O(n log n) time.
+   A = [3, 4, 2, 8]
+   => [2, 3, 4, 8]
+   A = [1]
+   => [1]
+3. Given a singly linked list A, determine if it's a palindrome. Return 1 or 0, denoting if it's a palindrome or not, respectively.
+   A = [1, 2, 2, 1]
+   => 1
+   A = [1, 3, 2]
+   => 0
+4. Given a linked list of integers. Find and return the length of the longest palindrome list that exists in that linked list.
+   - A palindrome list is a list that reads the same backward and forward.
+   - Expected memory complexity : O(1)
+   2 -> 3 -> 3 -> 3
+   => 3
+    2 -> 1 -> 2 -> 1 ->  2 -> 2 -> 1 -> 3 -> 2 -> 2
+   => 5
+5. Given a linked list where every node represents a linked list and contains two pointers of its type:
+    Pointer to next node in the main list (right pointer)
+    Pointer to a linked list where this node is head (down pointer). All linked lists are sorted.
+    You are asked to flatten the linked list into a single list. Use down pointer to link nodes of the flattened list. The flattened linked list should also be sorted.
+     3 -> 4 -> 20 -> 20 ->30
+     |    |    |     |    |
+     7    11   22    20   31
+     |               |    |
+     7               28   39
+     |               |
+     8               39
+    => 3 -> 4 -> 7 -> 7 -> 8 -> 11 -> 20 -> 20 -> 20 -> 22 -> 28 -> 30 -> 31 -> 39 -> 39
+    2 -> 4 
+    |    |       
+    7    11    
+    |            
+    7
+    => 2 -> 4 -> 7 -> 7 -> 11
+6. Given a linked list A and a value B, partition it such that all nodes less than B come before nodes greater than or equal to B.
+    You should preserve the original relative order of the nodes in each of the two partitions.
+    - A = [1, 4, 3, 2, 5, 2]
+        B = 3
+    => [1, 2, 2, 4, 3, 5]
+    - A = [1, 2, 3, 1, 3]
+        B = 2
+    => [1, 1, 2, 3, 3]
+7. Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and set.
+
+get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
+set(key, value) - Set or insert the value if the key is not already present. When the cache reaches its capacity, it should invalidate the least recently used item before inserting the new item.
+The LRUCache will be initialized with an integer corresponding to its capacity. Capacity indicates the maximum number of unique keys it can hold at a time.
+
+Definition of "least recently used" : An access to an item is defined as a get or a set operation of the item. "Least recently used" item is the one with the oldest access time.
+
+NOTE: If you are using any global variables, make sure to clear them in the constructor.
+
+Input : 
+         capacity = 2
+         set(1, 10)
+         set(5, 12)
+         get(5)        returns 12
+         get(1)        returns 10
+         get(10)       returns -1
+         set(6, 14)    this pushes out key = 5 as LRU is full. 
+         get(5)        returns -1 
+Expected Output
+Enter your input as per the following guideline:
+There are 1 lines in the input
+
+Line 1 ( Corresponds to arg 1 ) : The line starts with a pair of number numOperations, capacity. capacity is the number your constructor is initialized with. 
+Then numOperation operations follow. 
+Each operation is either : 
+ * G  : This corresponds to a function call get()
+ * S   : This corresponds to a function call set(num1, num2)
+Note that the function calls are made in order.  
+
+8. Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
+    Try solving it using constant additional space.
+
+                  ______
+                 |     |
+                 \/    |
+        1 -> 2 -> 3 -> 4
+    => Return the node corresponding to node 3. 
+    Enter your input as per the following guideline:
+There are 2 lines in the input
+
+Line 1 ( Corresponds to arg 1 ) : Elements in the linked list. First number S is the number of nodes. Then S numbers follow indicating the val in each of the nodes in sequence
+	For example, LinkedList: "5 --> 9 --> 7" will be written as "3 5 9 7"(without quotes).
+
+Line 2 : Integer X corresponding to a node position. If the integer is -1, then there is no loop. Otherwise, the end node has a next edge to node number X.
+	For example, Integer: "-1" will be written as "-1"(without quotes).
+
+9. Remove Loop from Linked List
+Problem Description
+You are using Google Maps to help you find your way around a new place. But, you get lost and end up walking in a circle. Google Maps has a way to keep track of where you've been with the help of special sensors.These sensors notice that you're walking in a loop, and now, Google wants to create a new feature to help you figure out exactly where you started going in circles.
+
+Here's how we can describe the challenge in simpler terms: You have a Linked List A that shows each step of your journey, like a chain of events. Some of these steps have accidentally led you back to a place you've already been, making you walk in a loop. The goal is to find out the exact point where you first started walking in this loop, and then you want to break the loop by not going in the circle just before this point.
+3 -> 2 -> 4 -> 5 -> 6
+          ^         |
+          |         |    
+          - - - - - -
+3 -> 2 -> 4 -> 5 -> 6 -> NULL
+1 -> 2
+^    |
+| - - 
+ 1 -> 2 -> NULL
+
+9. Given a singly linked list A
+ A: A0 → A1 → … → An-1 → An 
+  A0 → An → A1 → An-1 → A2 → An-2 → … 
+  You must do this in-place without altering the nodes' values.
+  A = [1, 2, 3, 4, 5]
+  => [1, 5, 2, 4, 3]
+  A = [1, 2, 3, 4] 
+  => [1, 4, 2, 3] 
+
+10. Delete middle node of a Linked List
+11.  K reverse linked list
+   - Given a singly linked list A and an integer B, reverse the nodes of the list B at a time and return the modified linked list.
+   A = [1, 2, 3, 4, 5, 6]
+    B = 2
+    => [2, 1, 4, 3, 6, 5]
+     A = [1, 2, 3, 4, 5, 6]
+    B = 3
+    => [3, 2, 1, 6, 5, 4]
+
+12. Middle element of linked list
+13. Reverse Link List II
+    - Reverse a linked list A from position B to C.
+    NOTE: Do it in-place and in one-pass.
+    A = 1 -> 2 -> 3 -> 4 -> 5
+    B = 2
+    C = 4
+    => 1 -> 4 -> 3 -> 2 -> 5
+    A = 1 -> 2 -> 3 -> 4 -> 5
+    B = 1
+    C = 5    
+    => 5 -> 4 -> 3 -> 2 -> 1
+
+14. Reverse Linked List
+15. Linked-List
+    - Design and implement a Linked List data structure.
+    A node in a linked list should have the following attributes - an integer value and a pointer to the next node.
+It should support the following operations:
+
+insert_node(position, value) - To insert the input value at the given position in the linked list.
+delete_node(position) - Delete the value at the given position from the linked list.
+print_ll() - Print the entire linked list, such that each element is followed by a single space (no trailing spaces).
+
+16. Remove Nth Node from List End
+    - Given a linked list A, remove the B-th node from the end of the list and return its head.
+For example, given linked list: 1->2->3->4->5, and B = 2.
+After removing the second node from the end, the linked list becomes 1->2->3->5.
+
+NOTE: If B is greater than the size of the list, remove the first node of the list.
+
+Try doing it using constant additional space.
+
+A = 1->2->3->4->5
+B = 2
+1->2->3->5
+A = 1
+B = 1
+Null
+
+16. Remove Duplicates from Sorted List
+    - Given a sorted linked list, delete all duplicates such that each element appears only once.
+I=> 1->1->2
+O=> 1 -> 2
+I=> 1->1->2->3->3
+O=> 1->2->3
