@@ -7,4 +7,5 @@
 5. Given a stack. Sort it.
    - Use Merge Sort
    - TC (NlogN) and SC (logN) - SC due to recursion call if pop release the memory else SC (NlogN)
-6. 
+6. Infix to Postfix
+7. Expression evaluation
