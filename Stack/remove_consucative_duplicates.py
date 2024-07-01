@@ -6,11 +6,11 @@ out -> "ak"
 s = "abckkcbadmmc"
 out -> "dc"
 """
-from stack import StackWithList
+from stack import StackWithLinkedList
 
 
 def remove_consucative_duplicates(string):
-    stack = StackWithList()
+    stack = StackWithLinkedList()
     for chr in string:
         if stack.peak() == chr:
             stack.pop()
