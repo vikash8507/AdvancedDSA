@@ -21,6 +21,18 @@ class StackWithList:
     def to_string(self) -> str:
         return "".join(self.stack)
 
+    def generate_stack(self, items):
+        for item in items:
+            self.push(item)
+
+    def print(self) -> None:
+        for item in self.stack:
+            print(item, end=" -> ")
+        print()
+
+    def is_empty(self) -> bool:
+        return self.top == -1
+
 
 class Node:
     def __init__(self, data: Any) -> None:
@@ -54,3 +66,16 @@ class StackWithLinkedList:
             tmp = tmp.next
         return string[-1::-1]
 
+    def generate_stack(self, items):
+        for item in items:
+            self.push(item)
+
+    def print(self) -> None:
+        tmp = self.head
+        while tmp:
+            print(tmp.data, end=" -> ")
+            tmp = tmp.next
+        print()
+
+    def is_empty(self) -> bool:
+        return self.head is None
