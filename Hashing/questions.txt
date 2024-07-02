@@ -1,0 +1,41 @@
+1. Given a Array of size N. Find the number of distinct elements.
+    TC O(N) SC O(N)
+2. Given an array of N elements. Count the number of duplicate pair of elements
+    - (i, j): A[i] == A[j] and i<j
+    - TC O(N) and SC O(N)
+    INPUT:- 1, 2, 1, 4, 1, 2, 3, 4, 1, 6
+    OUTPUT:- 8
+    Use HashMap or HashSet
+3. Given an array of size N. You have to return the minimum distance between any 2 same values.
+    INPUT: 1, 2, 3, 6, 1, 2, 3, 2, 1
+    OUTPUT: 2
+    TC O(N) and SC O(N)
+4. Given an array of size N. You have to return the maximum distance between any 2 same values.
+    INPUT: 1, 2, 2, 1, 4, 3, 3, 1, 7
+    OUTPUT: 7
+    TC O(N) and SC O(N)
+
+*********************************
+Note:- PS[L, R] = PS[R] - PS[L-1]
+if need to find 0 sum then
+PS[R] = PS[L-1]
+*********************************
+
+5. Given an array of size N. Check is there is a subarray whose sum is 0. **************************************
+   - INPUT: 2, 2, 1, -3, 4, 3, 1, -2, -3
+    OUTPUT: True
+    TC O(N) and SC O(N) or O(1) with inplace
+    Solution 1- Nested Loops
+    Solution 2: PREFIX SUM and check two same value is not with HashSet
+6. Given an array. Find the length of the longest SA whose sum is 0. ******************************************
+   - INPUT: 2, 2, 1, -3, 4, 3, 1, -2, -3
+    OUTPUT: True
+    TC O(N) and SC O(N) or O(1) with inplace
+    Solution 1- Nested Loops
+    Solution 2: PREFIX SUM and check two same value is not with HashSet and use solution of question 4
+7. Given an array. Find the number of SA whose sum is 0. ***************************************
+    - INPUT: 2, 2, 1, -3, 4, 3, 1, -2, -3
+    OUTPUT: True
+    TC O(N) and SC O(N) or O(1) with inplace
+    Solution 1- Nested Loops
+    Solution 2: PREFIX SUM and check two same value is not with HashSet and use solution of question 2

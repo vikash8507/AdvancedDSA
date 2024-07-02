@@ -1,0 +1,25 @@
+1. HashSet:
+    - A Data Structure which contains just keys
+    - Keys are unique (No Duplicates)
+    - Methods:
+        - Insert Element
+        - Check existance of Element
+        - Delete Element
+        - Size
+    - Unordered
+    - Time Complexity
+        - O(1) for all operations
+2. HashMap:
+    - A Data Structure which contains mapping of kay and value pair (<key, value>)
+    - Keys are unique (No Duplicates)
+    - Methods:
+        - Insert Element with value (When try to insert duplicate then value is overriding)
+        - Check existance of key
+        - Get value of a key
+        - Delete Element
+        - Size
+    - Unordered
+    - Time Complexity:
+        - O(1) for all operations
+3. Internal Impletentions
+   Topic: Hash Function, Rehashing, Load Factor
