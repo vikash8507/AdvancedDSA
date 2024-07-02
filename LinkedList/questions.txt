@@ -156,4 +156,70 @@ Output: 3->7->9->10->14->15->17->22->30->47
     list3 = 9->10->11->NULL
     Output: 1->2->3->4->7->8->9->10->11
     Merged lists in a sorted order where every element is greater than the previous element.
+31. Sort a k sorted doubly linked list
+    - Sort a k sorted doubly linked list
 
+    Given a doubly linked list containing n nodes, where each node is at most k away from its target position in the list. The problem is to sort the given doubly linked list. 
+    For example, let us consider k is 2, a node at position 7 in the sorted doubly linked list, can be at positions 5, 6, 7, 8, 9 in the given doubly linked list.
+
+    Original Doubly linked list:
+    3 6 2 12 56 8 
+    Doubly linked list after sorting:
+    2 3 6 8 12 56
+32. Construct a linked list from 2D matrix
+1 2 3
+4 5 6
+7 8 9
+Output :
+1 -> 2 -> 3 -> NULL
+|        |     |
+v       v    v
+4 -> 5 -> 6 -> NULL
+|        |     |
+v      v     v
+7 -> 8 -> 9 -> NULL
+|       |       |
+v     v       v
+NULL NULL NULL
+
+33. Rotate Doubly linked list by N nodes
+Given a doubly-linked list, rotate the linked list counter-clockwise by N nodes. Here N is a given positive integer and is smaller than the count of nodes in linked list. 
+Input : a  b  c  d  e   N = 2
+Output : c  d  e  a  b 
+
+Input : a  b  c  d  e  f  g  h   N = 4
+Output : e  f  g  h  a  b  c  d 
+
+34. Split a Circular Linked List into two halves
+    - If there are odd number of nodes, then first list should contain one extra.
+
+35. Intersection of two Sorted Linked Lists
+    - Given two lists sorted in increasing order, create and return a new list representing the intersection of the two lists. The new list should be made with its own memory — the original lists should not be changed. 
+Input: 
+First linked list: 1->2->3->4->6
+Second linked list be 2->4->6->8, 
+Output: 2->4->6.
+The elements 2, 4, 6 are common in 
+both the list so they appear in the 
+intersection list. 
+
+Input: 
+First linked list: 1->2->3->4->5
+Second linked list be 2->3->4, 
+Output: 2->3->4
+The elements 2, 3, 4 are common in 
+both the list so they appear in the 
+intersection list.
+
+36. Delete all occurrences of a given key in a linked list
+    - Given a singly linked list, delete all occurrences of a given key in it. For example, consider the following list.
+Input: 2 -> 2 -> 1 -> 8 -> 2 ->  3 -> 2 -> 7
+       Key to delete = 2
+Output:  1 -> 8 -> 3 -> 7 
+
+37. Find pairs with given sum in doubly linked list
+    - Given a sorted doubly linked list of positive distinct elements, the task is to find pairs in a doubly-linked list whose sum is equal to given value x, without using any extra space? 
+Input : head : 1 <-> 2 <-> 4 <-> 5 <-> 6 <-> 8 <-> 9
+        x = 7
+Output: (6, 1), (5,2)
+The expected time complexity is O(n) and auxiliary space is O(1).
