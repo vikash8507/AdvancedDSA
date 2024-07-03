@@ -1,4 +1,4 @@
-1. Given a Array of size N. Find the number of distinct elements.
+1. Given a Array of size N. Find the number of distinct elements. - D
     TC O(N) SC O(N)
 2. Given an array of N elements. Count the number of duplicate pair of elements
     - (i, j): A[i] == A[j] and i<j
