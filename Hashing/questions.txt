@@ -39,3 +39,12 @@ PS[R] = PS[L-1]
     TC O(N) and SC O(N) or O(1) with inplace
     Solution 1- Nested Loops
     Solution 2: PREFIX SUM and check two same value is not with HashSet and use solution of question 2
+
+**************************************************************
+8. Given N points on a 2-D plan. Find number of right angled triangels such that 1 side paralel to x-axis and 1 side is parallel to y-axis
+    - Find with 3 Loops O(N^3)
+    - Find with fix one point and search two points with two Loops O(N^2)
+    - Fix one points and find other two points using two HashMap O(N)
+
+9. Given N points. Find the number of rectanges whose sides are parallel to x-axis and y-axis
+

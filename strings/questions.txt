@@ -1,0 +1,12 @@
+1. Longest Prefix Sufix(LPS) of string
+    - Length of the Longest Prefix which is also a Sufix of the string
+    - Note:- Except Whole String
+      - Ex:- abcab -> ab (len = 2)
+    Solution:
+       1. Generate all substring with prefix and sufix and compare
+          - TC: O(N^2), SC: O(N^2)
+2. LPS Array
+3. Given a text (T) and pattern (P)
+   - Check if the pattern is present in the text as a substring
+4. Given two strings A and B. Check if they two are angrams.
+5. Given two strings A and B. Count the number of angrams of B in A as substring.

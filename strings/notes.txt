@@ -1,0 +1,7 @@
+1. Given a string of N characters.
+    - Prefix string of that string
+      - Substring with starts from first index.
+        - "abcd" -> "a", "ab", "abc", "abcd"
+    - Sufix string of that string
+      - Substring with ends at the last index.
+        - "abcd" -> "d", "cd", "bcd", "abcd"
