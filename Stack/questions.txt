@@ -9,4 +9,7 @@
    - TC (NlogN) and SC (logN) - SC due to recursion call if pop release the memory else SC (NlogN)
 6. Infix to Postfix
 7. Expression evaluation
-8. 
+8. Given an array. Find the nearest smaller element on left side for every elements
+9. Given an array. Find the nearest smaller element's index on left side for every elements
+10. Given an array. For every element find the distance of it with it's nearest smaller element of left.
+11. Given a histogram. Find the MAX rengangular area contan in it.
